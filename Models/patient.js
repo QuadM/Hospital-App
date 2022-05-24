@@ -12,7 +12,7 @@ const PatientSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    required: true,
+    required: false,
   },
   reservations: {
     type: Object,
@@ -20,4 +20,4 @@ const PatientSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Patient", PatientSchema, "crew");
+module.exports = mongoose.model("Patient", PatientSchema, "clinic");

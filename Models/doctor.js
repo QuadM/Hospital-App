@@ -14,13 +14,13 @@ const DoctorSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  image: {
+  gender: {
     type: String,
     required: true,
   },
-  reservations: {
-    type: Object,
-    required: false,
+  address: {
+    type: String,
+    required: true,
   },
 });
 

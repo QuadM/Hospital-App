@@ -14,9 +14,17 @@ const AppointmentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  reservations: {
+  ReceiptNo: {
     type: Object,
     required: false,
+  },
+  Date: {
+    type: Date,
+    required: true,
+  },
+  Status: {
+    type: String,
+    required: true,
   },
 });
 

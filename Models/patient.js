@@ -10,13 +10,21 @@ const PatientSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  image: {
-    type: String,
-    required: false,
+  dateOfBirth: {
+    type: Date,
+    required: true,
   },
-  reservations: {
-    type: Object,
-    required: false,
+  age: {
+    type: Number,
+    required: true,
+  },
+  gender: {
+    type: String,
+    required: true,
+  },
+  address: {
+    type: String,
+    required: true,
   },
 });
 
